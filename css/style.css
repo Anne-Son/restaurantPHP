@@ -1,0 +1,86 @@
+/* 
+Author: Anne Son;
+Theme: Restaurant Food Order;
+version: 1.0;
+*/
+
+/* CSS for All */
+* {
+  margin: 0 0;
+  padding: 0 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+  border: 1px solid blue;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2%;
+}
+.img-responsive {
+  width: 100%;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.clearfix {
+  clear: both;
+  float: none;
+}
+a {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+a:hover {
+  color: #ee5253;
+}
+.btn {
+  padding: 1%;
+  border: none;
+  font-size: 1rem;
+}
+.btn-primary {
+  background-color: #ff6b6b;
+  color: white;
+  cursor: pointer;
+}
+.btn-primary:hover{
+ 
+}
+
+/* CSS for navbar section */
+
+.logo {
+  border: 1px solid black;
+  width: 10%;
+  float: left;
+}
+.menu {
+  line-height: 40px;
+}
+.menu ul {
+  list-style-type: none;
+}
+.menu ul li {
+  display: inline;
+  padding: 1%;
+  font-weight: bold;
+}
+
+/* Food Search Section */
+.food-search {
+  background-image: url(../images/kimchibg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 70%;
+  padding: 8% 0;
+}
+.food-search input[type='search'] {
+  width: 50%;
+  padding: 1%;
+  font-size: 1rem;
+  border: none;
+}
