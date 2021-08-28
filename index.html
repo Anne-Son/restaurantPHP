@@ -1,98 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <!-- Important to make website responsive -->
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Galbi Restaurant</title>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Important to make website responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galbi Restaurant</title>
 
- <!-- Link CSS file -->
- <link rel="stylesheet" href="css/style.css">
-</head>
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
- <!-- Navbar Section Starts Here -->
- <section class="navbar">
-  <div class="container">
-   <div class="logo">
-    Logo Image
-   </div>
+  <body>
+    <!-- Navbar Section Starts Here -->
+    <section class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img
+            src="images/GALBILOGOwhite.png"
+            alt="Galbi logo"
+            class="img-responsive"
+          />
+        </div>
 
-   <div class="menu">
-    Menu will display here
-   </div>
-  </div>
- </section>
- <!-- Navbar Section Ends Here -->
+        <div class="menu text-right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Foods</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <!-- Navbar Section Ends Here -->
 
-  <!-- Food Search Section Starts Here -->
-  <section class="food-search">
-  <div class="container">
-   <form action="">
-    <input type="text">
-    <input type="Submit" value="Search">
-   </form>
-  </div>
-  </section>
- <!-- Food Search Section Ends Here -->
+    <!-- Food Search Section Starts Here -->
+    <section class="food-search text-center">
+      <div class="container">
+        <form action="">
+          <input type="search" name="search" placeholder="Search for Food..." />
+          <input
+            type="submit"
+            name="submit"
+            value="Search"
+            class="btn btn-primary"
+          />
+        </form>
+      </div>
+    </section>
+    <!-- Food Search Section Ends Here -->
 
-  <!-- Categories Section Starts Here -->
-  <section class="categories">
-  <div class="container">
-   <h2>Categories</h2>
-   <div class="box-3">
-    Box 1
-   </div>
-   <div class="box-3">
-    Box 2
-   </div>
-   <div class="box-3">
-    Box 3
-   </div>
-  </div>
-  </section>
- <!-- Categories Section Ends Here -->
+    <!-- Categories Section Starts Here -->
+    <section class="categories">
+      <div class="container">
+        <h2 class="text-center">Categories</h2>
 
-  <!-- Food Menu Section Starts Here -->
-  <section class="food-menu">
-   <div class="container">
-    <h2>Explore Foods</h2>
+        <div class="box-3 float-container">
+          <img
+            src="images/kimbab.jpg"
+            alt="kimbab"
+            class="img-responsive img-curve"
+          />
+          <h3 class="float-text text-white">Kimbab</h3>
+        </div>
 
-    <div class="food-menu">
-     Food menu 1
-    </div>
-    <div class="food-menu">
-     Food menu 2
+        <div class="box-3 float-container">
+          <img
+            src="images/bibimbab.jpg"
+            alt="bibimbab"
+            class="img-responsive img-curve"
+          />
+          <h3 class="float-text text-white">Bibimbab</h3>
+        </div>
 
-    </div>
-    <div class="food-menu">
-     Food menu 3
+        <div class="box-3 float-container">
+          <img
+            src="images/mandu.jpg"
+            alt="mandu"
+            class="img-responsive img-curve"
+          />
+          <h3 class="float-text text-white">Mandu</h3>
+        </div>
 
-    </div>
-    <div class="food-menu">
-     Food menu 4
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <!-- Categories Section Ends Here -->
 
-    </div>
-   </div>
-  </section>
- <!-- Food Menu Section Ends Here -->
+    <!-- Food Menu Section Starts Here -->
+    <section class="food-menu">
+      <div class="container">
+        <h2 class="text-center">Explore Foods</h2>
 
-  <!-- Social Section Section Starts Here -->
-  <section class="social">
-<div class="container">
+        <div class="food-menu-box">
+          <div class="food-menu-img img1">
+            <img
+              src="images/kimbab2.jpg"
+              alt="kimbab with sausage"
+              class="img-responsive img-curve"
+            />
+          </div>
+          <div class="food-menu-desc">
+            <h4>Kimbab</h4>
+            <p class="food-price">$17.5</p>
+            <p class="food-detail">
+              Made with dried algae, vegetables, egg, sausage and meat
+            </p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
 
-  </div>
-  </section>
- <!-- Social Section Section Ends Here -->
+        <div class="food-menu-box">
+          <div class="food-menu-img img2">
+            <img
+              src="images/kimchi.jpg"
+              alt="kimbab with sausage"
+              class="img-responsive img-curve"
+            />
+          </div>
+          <div class="food-menu-desc">
+            <h4>Kimchi</h4>
+            <p class="food-price">$8.5</p>
+            <p class="food-detail">Spicy fermented napa cabbage.</p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
 
-  <!-- Footer Section Starts Here -->
-  <section class="footer">
-<div class="container">
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/mandu-plate.jpg"
+              alt="kimbab with sausage"
+              class="img-responsive img-curve"
+            />
+          </div>
+          <div class="food-menu-desc">
+            <h4>Mandu</h4>
+            <p class="food-price">$7.5</p>
+            <p class="food-detail">
+              Korean dumplings that consist of a savory filling wrapped in thin
+              wrappers.
+            </p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
 
-  </div>
-  </section>
- <!-- Footer Section Ends Here -->
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/kimbab.jpg"
+              alt="kimbab with sausage"
+              class="img-responsive img-curve"
+            />
+          </div>
+          <div class="food-menu-desc">
+            <h4>Veggie Kimbab</h4>
+            <p class="food-price">$17.5</p>
+            <p class="food-detail">
+              Made with dried algae, vegetables, egg, sausage and meat
+            </p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
 
-</body>
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/kimbab2.jpg"
+              alt="kimbab with sausage"
+              class="img-responsive img-curve"
+            />
+          </div>
+          <div class="food-menu-desc">
+            <h4>Ramyun</h4>
+            <p class="food-price">$17.5</p>
+            <p class="food-detail">
+              Made with dried algae, vegetables, egg, sausage and meat
+            </p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/bibimbabmore.jpg"
+              alt="bibimbab"
+              class="img-responsive img-curve"
+            />
+          </div>
+          <div class="food-menu-desc">
+            <h4>Bibimbab</h4>
+            <p class="food-price">$15</p>
+            <p class="food-detail">
+              "Mixing rice" served with rice topped with vegetables and korean
+              chili sauce.
+            </p>
+            <a href="#" class="btn btn-primary">Order Now</a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <!-- Food Menu Section Ends Here -->
+
+    <!-- Social Section Section Starts Here -->
+    <section class="social">
+      <div class="container">
+        <ul>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Twitter</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- Social Section Section Ends Here -->
+
+    <!-- Footer Section Starts Here -->
+    <section class="footer">
+      <div class="container">
+        <p>
+          All rights reserved. Designed by
+          <a href="www.anneson.com"> Anne Son </a>
+        </p>
+      </div>
+    </section>
+    <!-- Footer Section Ends Here -->
+  </body>
 </html>
