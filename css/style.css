@@ -135,17 +135,34 @@ h3 {
   border-radius: 8px;
   display: flex;
 }
-.food-menu-img {
+/* .food-menu-img {
   width: 20%;
   vertical-align: middle;
-  height: auto;
   float: left;
+} */
+.square {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
 }
-.img1 {
-  flex: 1.5;
+.menu-img {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  top: 5%;
+  left: 20%;
+  transform: translate(-20%, -20%);
 }
-.img2 {
-  flex: 1.4998;
+
+.square img.landscape {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 20%;
+  left: 10%;
+  transform: translate(-20%, -20%);
 }
 
 .food-menu-desc {
