@@ -185,10 +185,21 @@ h3 {
 }
 
 /* For Mobile Size or Smaller Screen */
-@media only screen and (maxk-width: 768px) {
+@media only screen and (max-width: 768px) {
   .logo {
     width: 80%;
     float: none;
-    margin: 1% auto;
+    margin: 2% auto;
+  }
+  .menu ul {
+    text-align: center;
+  }
+  .menu ul li {
+    padding: 1%;
+  }
+  .food-search input[type='search'] {
+    width: 90%;
+    padding: 2%;
+    margin-bottom: 5%;
   }
 }
