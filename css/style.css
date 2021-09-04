@@ -8,7 +8,7 @@ version: 1.0;
 * {
   margin: 0 0;
   padding: 0 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -58,13 +58,25 @@ a:hover {
   background-color: #caa851;
   color: white;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bebas Neue', cursive;
+}
 h2 {
-  color: #222f3e;
-  font-size: 2rem;
+  color: #393636;
+  font-size: 2.5rem;
   margin-bottom: 2%;
 }
 h3 {
   font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #393636;
 }
 .float-container {
   position: relative;
@@ -76,13 +88,15 @@ h3 {
 }
 
 /* CSS for navbar section */
-
+.navbar-container {
+  padding: 0;
+}
 .logo {
-  width: 10%;
+  width: 15%;
   float: left;
 }
 .menu {
-  line-height: 70px;
+  line-height: 90px;
 }
 .menu ul {
   list-style-type: none;
@@ -90,6 +104,8 @@ h3 {
 .menu ul li {
   display: inline;
   padding: 2.5%;
+  font-size: large;
+  font-family: 'Bebas Neue', cursive;
 }
 
 /* Food Search Section */
@@ -183,6 +199,35 @@ h3 {
 .social ul li {
   display: inline;
 }
+/* Footer */
+#footer {
+  background-color: #393636;
+  padding: 1% 0;
+  line-height: 1.625;
+}
+#footer h4 {
+  margin: 6% 0;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #ccae62;
+  color: white;
+  letter-spacing: 1px;
+}
+#footer p {
+  font-size: 0.95rem;
+  line-height: 1.83;
+}
+p.address {
+  color: white;
+  margin-bottom: 1%;
+}
+
+/* Copyright */
+.copyright {
+  width: 100%;
+  padding: 1.45em 0;
+  background-color: #272727;
+  color: white;
+}
 
 /* For Mobile Size or Smaller Screen */
 @media only screen and (max-width: 768px) {
@@ -200,6 +245,33 @@ h3 {
   .food-search input[type='search'] {
     width: 90%;
     padding: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+  }
+  .btn {
+    width: 91%;
+    padding: 2%;
+  }
+  .food-search {
+    padding: 10% 0;
+  }
+  .categories {
+    padding: 15% 0;
+  }
+  .h2 {
+    margin-bottom: 10%;
+  }
+  .box-3 {
+    width: 95%;
+    margin: 4% auto;
+  }
+  .food-menu {
+    padding: 20% 0;
+  }
+  .food-menu-box {
+    width: 90%;
+    padding: 5% 0;
+  }
+  .social {
+    padding: 15% 0;
   }
 }
