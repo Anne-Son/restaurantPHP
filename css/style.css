@@ -87,26 +87,48 @@ h4 {
   bottom: 20px;
   left: 40%;
 }
+fieldset {
+  border: 1px solid white;
+  margin: 5%;
+  padding: 3%;
+  border-radius: 5px;
+}
 
 /* CSS for navbar section */
+.navbar {
+  z-index: 6;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+}
 .navbar-container {
   padding: 0;
+  background-color: white;
+  top: 0;
 }
 .logo {
-  width: 15%;
+  width: 10%;
   float: left;
 }
 .menu {
-  line-height: 90px;
+  line-height: 60px;
 }
 .menu ul {
   list-style-type: none;
 }
 .menu ul li {
   display: inline;
-  padding: 2.5%;
+  padding: 2%;
   font-size: large;
+}
+.menu ul li a {
+  color: black;
   font-family: 'Bebas Neue', cursive;
+  font-size: larger;
+}
+.menu ul li a:hover {
+  color: #caa851;
 }
 
 /* Food Search Section */
@@ -173,6 +195,16 @@ h4 {
   left: 10%;
   transform: translate(-10%, -20%);
 }
+.food-menu-img {
+  width: 20%;
+  float: left;
+}
+
+.food-menu-desc {
+  width: 70%;
+  float: left;
+  margin-left: 8%;
+}
 
 .food-menu-desc {
   width: 70%;
@@ -229,6 +261,23 @@ p.address {
   background-color: #272727;
   color: white;
 }
+/* for Order Section */
+.order {
+  width: 50%;
+  margin: 0 auto;
+}
+.input-responsive {
+  width: 96%;
+  padding: 1%;
+  margin-bottom: 3%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.order-label {
+  margin-bottom: 1%;
+  font-weight: bold;
+}
 
 /* For Mobile Size or Smaller Screen */
 @media only screen and (max-width: 768px) {
@@ -274,5 +323,8 @@ p.address {
   }
   .social {
     padding: 15% 0;
+  }
+  .order {
+    width: 100%;
   }
 }
