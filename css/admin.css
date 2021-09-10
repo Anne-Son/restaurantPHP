@@ -1,0 +1,49 @@
+/* 
+Author: Anne Son;
+Theme: Food Order Website Admin;
+version: 1.0;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  padding: 1%;
+  width: 80%;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+/* Menu */
+.menu {
+  border-bottom: 1px solid #caa851;
+}
+.menu ul {
+  list-style-type: none;
+}
+.menu ul li {
+  display: inline;
+  padding: 1%;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Bebas Neue', cursive;
+  font-size: larger;
+}
+.menu ul li a:hover {
+  color: #caa851;
+}
+/* Main */
+.main-content {
+  margin: 1% 0;
+}
+
+/* CSS for footer */
+.footer {
+  background-color: #272727;
+  color: white;
+}
