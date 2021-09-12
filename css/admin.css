@@ -17,6 +17,14 @@ version: 1.0;
 .text-center {
   text-align: center;
 }
+.clearfix {
+  float: none;
+  clear: both;
+}
+a {
+  color: #caa851;
+  text-decoration: none;
+}
 /* Menu */
 .menu {
   border-bottom: 1px solid #caa851;
@@ -40,6 +48,14 @@ version: 1.0;
 /* Main */
 .main-content {
   background-color: #f1f2f6e8;
+  padding: 3%;
+}
+.col-4 {
+  width: 18%;
+  background-color: white;
+  margin: 1%;
+  padding: 2%;
+  float: left;
 }
 
 /* CSS for footer */
