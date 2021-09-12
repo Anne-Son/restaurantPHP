@@ -25,7 +25,7 @@
    <!-- Main Content Section Starts -->
    <div class="main-content">
     <div class="wrapper">
-    Main goes here
+    Main goes here!!
     </div>
    </div>
    <!-- Main Content Section Ends -->

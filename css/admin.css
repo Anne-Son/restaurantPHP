@@ -1,6 +1,6 @@
 /* 
 Author: Anne Son;
-Theme: Food Order Website Admin;
+Theme: Galbi Restaurant Food Order Website Admin;
 version: 1.0;
 */
 * {
@@ -39,7 +39,7 @@ version: 1.0;
 }
 /* Main */
 .main-content {
-  margin: 1% 0;
+  background-color: #f1f2f6e8;
 }
 
 /* CSS for footer */
