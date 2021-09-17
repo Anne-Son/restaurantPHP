@@ -94,9 +94,9 @@
       }
 
       //Check whether the image is selected or not and set the value for image name accordingly 
-      //print_r($_FILES['image']);
+      // print_r($_FILES['image']);
 
-      //die();//Break the Code Here
+      // die();//Break the Code Here
       if(isset($_FILES['image']['name']))
       {
         //Upload the image
@@ -107,9 +107,12 @@
         //Get the extension of our image(jpg,png,gif,etc)
         $ext = end(explode('.', $image_name));
 
+        //Rename the image
+        $image_name = "Food_Category_".rand(000, 999).'.'.$ext;
+
         $source_path = $_FILES['image']['tmp_name'];
 
-        $destination_path = "../images/category".$image_name;
+        $destination_path = "../images/category/".$image_name;
 
         //Upload the image
         $upload = move_uploaded_file($source_path,$destination_path);
