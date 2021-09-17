@@ -1,4 +1,10 @@
-<html>
+<?php 
+include('../config/constants.php');
+include('login-check.php');
+?>
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
    <title>Galbi Restaurant - Home PAge</title>
    <link rel="stylesheet" href="../css/admin.css">
@@ -15,7 +21,7 @@
       <li><a href="manage-category.php">CATEGORY</a></li>
       <li><a href="manage-food.php">FOOD</a></li>
       <li><a href="manage-order.php">ORDER</a></li>
-
+      <li><a href="logout.php">Logout</a></li>
      </ul>
      </div>
     

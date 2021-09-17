@@ -1,0 +1,23 @@
+<?php 
+//Start Session
+session_start();
+
+//Create Constants to Store Non Repeating Values
+define('SITEURL','http://localhost/restaurantPHP/');
+define('LOCALHOST', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD','');
+define('DB_NAME', 'restaurant-php');
+
+
+ $conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error()); //database connection
+ $db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error()); //selecting database
+
+function displayMsg($session){
+if(isset($_SESSION[$session]))
+{
+   echo $_SESSION[$session]; //Displaying session message
+   unset($_SESSION[$session]); //Removing Session message
+}
+}
+?>
