@@ -6,46 +6,84 @@
     
        <br><br>
       <!-- Button to Add Admin -->
-      <a href="#" class="btn-primary">Add Food</a>
+      <a href="<?php echo SITEURL; ?>admin/add-food.php" class="btn-primary">Add Food</a>
       <br><br><br>
+
+      <?php
+      displayMsg('add');
+      ?>
 
       <table class="tbl-full">
          <tr>
             <th>S.N</th>
-            <th>Full Name</th>
-            <th>Username</th>
+            <th>Food Name</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Featured</th>
+            <th>Active</th>
             <th>Actions</th>
          </tr>
+         <?php 
+      //Create a SQL Query to get food properties
+         $sql = "SELECT * FROM tbl_food";
 
-         <tr>
-            <td>1. </td>
-            <td>Anne Son</td>
-            <td>anneson</td>
-            <td>
-               <a href="#" class="btn-secondary">Update Admin</a>  
-               <a href="#" class="btn-danger">Delete Admin</a> 
-            </td>
-         </tr>
+         //Execute the query
+         $res = mysqli_query($conn, $sql);
 
-           <tr>
-            <td>2. </td>
-            <td>Anne Son</td>
-            <td>anneson</td>
-            <td>
-                     <a href="#" class="btn-secondary">Update Admin</a>  
-               <a href="#" class="btn-danger">Delete Admin</a> 
-            </td>
-         </tr>
+         //count rows to check if we have food inf or not
+         $count = mysqli_num_rows($res);
 
-         <tr>
-            <td>3. </td>
-            <td>Anne Son</td>
-            <td>anneson</td>
-            <td>
-                    <a href="#" class="btn-secondary">Update Admin</a>  
-               <a href="#" class="btn-danger">Delete Admin</a> 
-            </td>
-         </tr>
+         $sn=1;
+
+         if($count>0)
+         {
+            //Get the food properties from database and display them
+            while($row=mysqli_fetch_assoc($res))
+            {
+               //Get the values from individual columns
+               $id=$row['id'];
+               $food_name=$row['food_name'];
+               $price=$row['price'];
+               $image_name = $row['image_name'];
+               $featured = $row['featured'];
+               $active =$row['active'];
+               ?>
+               <tr>
+                  <td><?= $sn++; ?> </td>
+                  <td><?= $food_name; ?></td>
+                  <td>
+                     <?php
+                     //Check if we have an image or not
+                     if($image_name=="")
+                     {
+                        echo "<div class='error'>Image not added</div>";
+                     }
+                     else
+                     {
+                        ?>
+                        <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" width="100px">
+                        <?php
+                     } 
+                     ?>
+                  </td>
+                  <td><?= $image_name; ?></td>
+                  <td><?= $featured; ?></td>
+                  <td><?= $active; ?></td>
+                  <td>
+                     <a href="#" class="btn-secondary">Update Food</a>  
+                     <a href="#" class="btn-danger">Delete Food</a> 
+                  </td>
+               </tr>
+
+               <?php 
+            }
+         }
+         else
+         {
+            //Food not added in Database
+            echo "<tr> <td colspan='7' class='error'>Food not Added</td> </tr>";
+         }       
+         ?>       
 
       </table>
 
