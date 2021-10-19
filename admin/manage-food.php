@@ -11,6 +11,10 @@
 
       <?php
       displayMsg('add');
+      displayMsg('delete');
+      displayMsg('upload');
+      displayMsg('delete');
+      displayMsg('unauthorize');   
       ?>
 
       <table class="tbl-full">
@@ -70,7 +74,7 @@
                   <td><?= $featured; ?></td>
                   <td><?= $active; ?></td>
                   <td>
-                     <a href="#" class="btn-secondary">Update Food</a>  
+                     <a href="<?php echo SITEURL; ?>admin/update-food.php?id=<?php echo $id; ?>" class="btn-secondary">Update Food</a>  
                      <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Food</a> 
                   </td>
                </tr>

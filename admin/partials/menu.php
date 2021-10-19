@@ -6,7 +6,13 @@ include('login-check.php');
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   <title>Galbi Restaurant - Home PAge</title>
+   <title>Galbi Restaurant - Home Page</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
    <link rel="stylesheet" href="../css/admin.css">
 
   </head>
