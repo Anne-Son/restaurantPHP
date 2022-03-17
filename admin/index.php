@@ -17,27 +17,41 @@
       <br><br>
 
       <div class="col-4 text-center">
-        <h1>5</h1>
+        <?php 
+          //sql query
+          $sql = "SELECT * FROM tbl_category";
+          //execute query
+          $res = mysqli_query($conn, $sql);
+          $count = mysqli_num_rows($res);
+        ?>
+        <h1><?php echo $count ?></h1>
         <br>
         Categories
       </div>
 
        <div class="col-4 text-center">
-        <h1>5</h1>
+         <?php 
+          //sql query
+          $sql = "SELECT * FROM tbl_food";
+          //execute query
+          $res = mysqli_query($conn, $sql);
+          $count = mysqli_num_rows($res);
+        ?>
+        <h1><?php echo $count ?></h1>
         <br>
-        Categories
+        Foods
       </div>
 
        <div class="col-4 text-center">
         <h1>5</h1>
         <br>
-        Categories
+        Total Orders
       </div>
 
        <div class="col-4 text-center">
         <h1>5</h1>
         <br>
-        Categories
+        Revenue Generated
       </div>
       <div class="clearfix"></div>
     </div>
