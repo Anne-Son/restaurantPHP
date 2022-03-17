@@ -6,7 +6,7 @@ version: 1.0;
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .wrapper {
@@ -93,7 +93,7 @@ table tr td {
 .menu ul li a {
   text-decoration: none;
   color: black;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: larger;
 }
 .menu ul li a:hover {
@@ -102,7 +102,8 @@ table tr td {
 /* Main */
 .main-content {
   background-color: #f1f2f6e8;
-  padding: 3%;
+  /* padding: 3% 3% 16%; */
+  height: 81vh;
 }
 .col-4 {
   width: 18%;
@@ -125,4 +126,9 @@ table tr td {
   color: white;
   padding: 1%;
   margin: 0 -5%;
+}
+.footer-all {
+  background-color: #272727;
+  color: white;
+  padding: 1%;
 }

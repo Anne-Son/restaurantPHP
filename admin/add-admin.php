@@ -59,7 +59,7 @@
    //1. Get data from form
    $full_name = $_POST['full_name'];
    $username = $_POST['username'];
-   $password = md5($_POST['password']); //password encryption with MD5
+   $password = $_POST['password']; //password encryption with MD5
 
    //2. SQL Query to Save the data into database
    $sql = "INSERT INTO tbl_admin SET

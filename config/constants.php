@@ -7,7 +7,7 @@ define('SITEURL','http://localhost/restaurantPHP/');
 define('LOCALHOST', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD','');
-define('DB_NAME', 'galbi-restaurant');
+define('DB_NAME', 'galbidb');
 
 
  $conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error()); //database connection
