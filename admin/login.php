@@ -22,9 +22,9 @@
   <br><br>
   <!-- Login form starts here -->
    <form action="" method="POST" class="text-center">
-    Username: <br>
+    Username <br>
     <input type="text" name="username" placeholder="Enter username"><br><br>
-    Password: <br>
+    Password <br>
     <input type="password" name="password" placeholder="Enter password"> <br><br>
     <input type="submit" name="submit" value="Login" class="btn-primary"> <br><br>
    </form>
@@ -50,7 +50,7 @@ if(isset($_POST['submit']))
   //Process for login
   //Get data from login form
   $username = $_POST['username'];
-  $password = md5($_POST['password']);
+  $password = $_POST['password'];
 
   //2. Sql to check whether the user with username and password exists or not
   $sql = "SELECT * FROM tbl_admin WHERE username='$username' AND password='$password'";

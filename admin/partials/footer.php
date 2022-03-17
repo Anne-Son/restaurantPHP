@@ -1,5 +1,5 @@
   <!-- Footer Section Starts -->
-   <div class="footer">
+   <div class="footer-all">
     <div class="wrapper">
         <p class="text-center">
           &copy 2021. All rights reserved. Galbi Restaurant. Designed by
