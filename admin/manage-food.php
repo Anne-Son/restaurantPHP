@@ -14,7 +14,8 @@
       displayMsg('delete');
       displayMsg('upload');
       displayMsg('delete');
-      displayMsg('unauthorize');   
+      displayMsg('unauthorize'); 
+      displayMsg('update');  
       ?>
 
       <table class="tbl-full">

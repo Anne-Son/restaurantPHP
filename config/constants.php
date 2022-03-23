@@ -20,4 +20,13 @@ if(isset($_SESSION[$session]))
    unset($_SESSION[$session]); //Removing Session message
 }
 }
+
+function countDashboard($table, $number){
+  //sql query
+          $sql.$number = "SELECT * FROM $table";
+          //execute query
+          $res.$number = mysqli_query($conn, $sql.$number);
+          $count = mysqli_num_rows($res.$number);
+          echo $count.$number;
+}
 ?>
