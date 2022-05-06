@@ -8,7 +8,7 @@ version: 1.0;
 * {
   margin: 0 0;
   padding: 0 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -63,7 +63,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   letter-spacing: 1.1px;
 }
 h2 {
@@ -124,7 +124,7 @@ fieldset {
 }
 .menu ul li a {
   color: black;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: larger;
 }
 .menu ul li a:hover {
@@ -139,12 +139,22 @@ fieldset {
   background-position: 100% 70%;
   padding: 8% 0;
 }
-.food-search input[type='search'] {
+.food-search input[type="search"] {
   width: 50%;
   padding: 1%;
   font-size: 1rem;
   border: none;
   border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .food-search {
+    padding: 10% 0;
+  }
+  .food-search input[type="search"] {
+    width: 90%;
+    padding: 2%;
+    margin-bottom: 2%;
+  }
 }
 
 /* Categories */
@@ -292,18 +302,12 @@ p.address {
   .menu ul li {
     padding: 1%;
   }
-  .food-search input[type='search'] {
-    width: 90%;
-    padding: 2%;
-    margin-bottom: 3%;
-  }
+
   .btn {
     width: 91%;
     padding: 2%;
   }
-  .food-search {
-    padding: 10% 0;
-  }
+
   .categories {
     padding: 15% 0;
   }

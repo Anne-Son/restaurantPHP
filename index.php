@@ -3,7 +3,7 @@
     <!-- Food Search Section Starts Here -->
     <section class="food-search text-center">
       <div class="container">
-        <form action="">
+        <form action="<?php echo SITEURL; ?>food-search.php" method="POST">
           <input type="search" name="search" placeholder="Search for Food..." />
           <input
             type="submit"
@@ -37,7 +37,7 @@
               $title=$row['title'];
               $image_name = $row['image_name'];
               ?>
-            <a href="#">
+            <a href="<?php echo SITEURL;?>category-foods.php?category_id=<?php echo $id;?>">
               <div class="box-3 float-container">
                 <?php 
                   //Check if the image is available or not
@@ -60,9 +60,7 @@
                 <h3 class="float-text text-white"><?php echo $title;?></h3>
                 </div>
             </a>
-
-
-
+            
               <?php
             }
           }
