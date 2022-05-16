@@ -61,7 +61,7 @@
                   <p class="food-detail">
                     <?php echo $description;?>
                   </p>
-                  <a href="#" class="btn btn-primary btn-menu">Order Now</a>
+                  <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id;?>" class="btn btn-primary btn-menu">Order Now</a>
                 </div>
                 <div class="clearfix"></div>
               </div>

@@ -15,6 +15,13 @@
       </div>
     </section>
     <!-- Food Search Section Ends Here -->
+    <?php 
+    if(isset($_SESSION['order']))
+    {
+      echo $_SESSION['order'];
+      unset($_SESSION['order']);
+    }
+    ?>
 
     <!-- Categories Section Starts Here -->
     <section class="categories">
@@ -130,7 +137,7 @@
                 <h4><?php echo $food_name; ?></h4>
                 <p class="food-price">$<?php echo $price; ?></p>
                 <p class="food-detail"><?php echo $description; ?></p>
-                <a href="#" class="btn btn-primary btn-menu">Order Now</a>
+                <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id;?>" class="btn btn-primary btn-menu">Order Now</a>
               </div>
               <div class="clearfix"></div>
             </div>
@@ -144,9 +151,6 @@
         }
 
         ?>
-
-        
-
 
         <div class="clearfix"></div>
       </div>

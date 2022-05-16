@@ -11,40 +11,68 @@
       <table class="tbl-full">
          <tr>
             <th>S.N</th>
-            <th>Full Name</th>
-            <th>Username</th>
+            <th>Food</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Order Date</th>
+            <th>Status</th>
+            <th>Customer Name</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>Address</th>
             <th>Actions</th>
          </tr>
 
-         <tr>
-            <td>1. </td>
-            <td>Anne Son</td>
-            <td>anneson</td>
-            <td>
-               <a href="#" class="btn-secondary">Update Admin</a>  
-               <a href="#" class="btn-danger">Delete Admin</a> 
-            </td>
-         </tr>
+         <?php
+         $sql = "SELECT * FROM tbl_order ORDER BY id DESC";
+         $res = mysqli_query($conn, $sql);
+         $count = mysqli_num_rows($res);
+         if($count>0)
+         {
+            $sn = 1;
+            while($row=mysqli_fetch_assoc($res))
+            {
+               $id = $row['id'];
+               $food = $row['food'];
+               $price = $row['price'];
+               $quantity = $row['quantity'];
+               $total = $row['total'];
+               $order_date = $row['order_date'];
+               $status = $row['status'];
+               $customer_name = $row['customer_name'];
+               $customer_contact = $row['customer_contact'];
+               $customer_email = $row['customer_email'];
+               $customer_address = $row['customer_address'];
+               ?>
 
-           <tr>
-            <td>2. </td>
-            <td>Anne Son</td>
-            <td>anneson</td>
-            <td>
-                     <a href="#" class="btn-secondary">Update Admin</a>  
-               <a href="#" class="btn-danger">Delete Admin</a> 
-            </td>
-         </tr>
+                   <tr>
+                     <td><?php echo $sn++; ?> </td>
+                     <td><?php echo $food; ?> </td>
+                     <td><?php echo $price; ?></td>
+                     <td><?php echo $quantity; ?></td>
+                     <td><?php echo $total; ?></td>
+                     <td><?php echo $order_date; ?></td>
+                     <td><?php echo $status; ?></td>
+                     <td><?php echo $customer_name; ?></td>
+                     <td><?php echo $customer_contact; ?></td>
+                     <td><?php echo $customer_email; ?></td>
+                     <td><?php echo $customer_address; ?></td>
+                     <td>
+                        <a href="#" class="btn-secondary">Update Order</a>  
+                     </td>
+                  </tr>
 
-         <tr>
-            <td>3. </td>
-            <td>Anne Son</td>
-            <td>anneson</td>
-            <td>
-                    <a href="#" class="btn-secondary">Update Admin</a>  
-               <a href="#" class="btn-danger">Delete Admin</a> 
-            </td>
-         </tr>
+               <?php
+            }
+         }
+         else
+         {
+            echo "<tr><td colspan='12'class='error'>Orders not Available</td><tr>";
+         }
+         ?>
+
+        
 
       </table>
 
